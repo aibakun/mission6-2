@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="mission6-2.css" />
+  </head>
+  <body>
+    <script src="mission6-2.js"></script>
+    <div class="container">
+      <h1>筋トレ記録アプリ</h1>
+      <form id="record-form">
+        <label for="date">日付:</label>
+        <input type="date" id="date" required />
+        <label for="body-part">部位:</label>
+        <select id="body-part">
+          <option value="胸">胸</option>
+          <option value="背中">背中</option>
+          <option value="脚">脚</option>
+          <option value="肩">肩</option>
+          <option value="腕">腕</option>
+        </select>
+        <label for="exercise">メニュー:</label>
+        <input type="text" id="exercise" required />
+        <label for="details">詳細:</label>
+        <textarea id="details" rows="4"></textarea>
+        <button type="button" onclick="saveRecord()">記録する</button>
+      </form>
+
+      <h2>筋トレ記録一覧</h2>
+      <table id="record-table">
+        <tr>
+          <th>日付</th>
+          <th>部位</th>
+          <th>メニュー</th>
+          <th>詳細</th>
+          <th>操作</th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
